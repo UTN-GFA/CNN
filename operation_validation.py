@@ -41,8 +41,11 @@ print(successive_feature_maps[0][0,1,3,0])
 
 filters, biases = model.layers[0].get_weights()
 
-# print(f'filter shape: {filters.shape}')
-# print(f'biases: {biases[0]}')
+# print('#####')
+# print(f'filter 1: {filters[:,:,:,0]}')
+# print('#####')
+
+print(f'biases: {biases[0]}')
 
 def convolution(filter, biases, image, stride, number_filter): # stride -> Para poder generalizar. 
 	
@@ -54,8 +57,6 @@ def convolution(filter, biases, image, stride, number_filter): # stride -> Para 
 	filter_width = filter.shape[1]
 	filter_channels = filter.shape[2]
 
-	print(filter_height, filter_width, filter_channels)
-
 	result = 0
 
 	for i in range(filter_height):
@@ -66,3 +67,22 @@ def convolution(filter, biases, image, stride, number_filter): # stride -> Para 
 	print(f'Result of conv element 1 = {result+biases[0]}')
 
 convolution(filters, biases, x, 0, 0)
+
+
+# filter 1: 
+# # R
+# [[[ 0.5698619   0.40890396 -0.36380863]
+#   [ 0.5614102   0.5993685   0.55676275]
+#   [ 0.55084157  0.2543275   0.13960779]]
+
+# # G
+#  [[ 0.21123037 -0.43697175  0.26390883]
+#   [ 0.5817639   0.06042234  0.01526073]
+#   [ 0.05200297 -0.39285138 -0.33733857]]
+
+# # B 
+#  [[-0.03604303 -0.52488816 -0.2592365 ]
+#   [-0.407283   -0.09848811 -0.19774196]
+#   [-0.3290573   0.16400887 -0.4091162 ]]]
+
+
