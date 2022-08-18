@@ -36,8 +36,13 @@ for i in range(len(successive_feature_maps)):
     #print(f'Feature map [{i}]:{successive_feature_maps[i].shape}')
     pass
 
-print(successive_feature_maps[0][0,1,3,0])
-# print(successive_feature_maps[1])
+# Operation Validation
+# print(successive_feature_maps[0][0,1,1,0])
+
+# print('Feature Map')
+# print(successive_feature_maps[0].shape)
+# print(successive_feature_maps[0][0,1:4,2:5,1:3])
+
 
 filters, biases = model.layers[0].get_weights()
 
@@ -62,12 +67,15 @@ def convolution(filter, biases, image, stride, number_filter): # stride -> Para 
 	for i in range(filter_height):
 		for j in range(filter_width):
 			for k in range(filter_channels): #RGB Image input
-				result += image[0,i,j+2,k] * filter[i,j,k,number_filter] #number_filter = first filter of the layer. 
+				result += image[0,i,j+stride,k] * filter[i,j,k,number_filter] #number_filter = first filter of the layer. 
+				print(f'column:{i}, row:{j}, channel:{k}, pixel value:{image[0,i,j+stride,k]}')
+
 
 	print(f'Result of conv element 1 = {result+biases[0]}')
 
 convolution(filters, biases, x, 0, 0)
 
+print(x[0,0:3,0:3,0:3])
 
 # filter 1: 
 # # R
@@ -85,4 +93,6 @@ convolution(filters, biases, x, 0, 0)
 #   [-0.407283   -0.09848811 -0.19774196]
 #   [-0.3290573   0.16400887 -0.4091162 ]]]
 
+
+# Image: 
 
