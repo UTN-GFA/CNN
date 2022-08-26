@@ -1,14 +1,11 @@
 # visualize feature maps output from each block in the vgg model
 import tensorflow as tf
 from tensorflow.python.keras.layers import Dense
-
-
 from keras.utils import load_img
 from keras.utils import img_to_array
-
 from keras.applications.vgg16 import VGG16
 from keras.applications.vgg16 import preprocess_input
-from keras.applications import ImageDataGenerator
+# from keras.applications import ImageDataGenerator
 from keras.models import Model
 from matplotlib import pyplot
 from numpy import expand_dims

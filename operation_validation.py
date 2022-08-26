@@ -1,3 +1,4 @@
+from ctypes import BigEndianStructure
 from distutils.util import subst_vars
 from unittest import result
 from keras.models import load_model
@@ -6,6 +7,8 @@ from keras.utils import load_img
 from keras.utils import img_to_array
 from keras.applications.vgg16 import preprocess_input
 import numpy as np
+from matplotlib import pyplot
+
 
 # Selection of the model previously trained. 
 model = load_model('final_model.h5')
@@ -64,18 +67,37 @@ def convolution(filter, biases, image, stride, number_filter): # stride -> Para 
 
 	result = 0
 
-	for i in range(filter_height):
-		for j in range(filter_width):
-			for k in range(filter_channels): #RGB Image input
-				result += image[0,i,j+stride,k] * filter[i,j,k,number_filter] #number_filter = first filter of the layer. 
-				print(f'column:{i}, row:{j}, channel:{k}, pixel value:{image[0,i,j+stride,k]}')
+	for h in range(filter_height):
+		for w in range(filter_width):
+			for c in range(filter_channels): #RGB Image input
+				result += image[0,h,w+stride,c] * filter[h,w,c,number_filter] #number_filter = first filter of the layer. 
+				print(f'column:{h}, row:{w}, channel:{c}, pixel value:{image[0,h,w+stride,c]}')
 
 
 	print(f'Result of conv element 1 = {result+biases[0]}')
 
 convolution(filters, biases, x, 0, 0)
 
+
 print(x[0,0:3,0:3,0:3])
+
+square = 3
+
+for fmap in successive_feature_maps:
+	# plot all 64 maps in an 8x8 squares
+	ix = 1
+	for _ in range(square):
+		for _ in range(square):
+			# specify subplot and turn of axis
+			ax = pyplot.subplot(square, square, ix)
+			ax.set_xticks([])
+			ax.set_yticks([])
+			# plot filter channel in grayscale
+			pyplot.imshow(fmap[0, :, :, ix-1], cmap='gray')
+			ix += 1
+	# show the figure
+	pyplot.show()
+
 
 # filter 1: 
 # # R
@@ -95,4 +117,14 @@ print(x[0,0:3,0:3,0:3])
 
 
 # Image: 
+# [[[0.8666667  0.8862745  0.7764706 ]
+#   [0.827451   0.84705883 0.70980394]
+#   [0.7647059  0.78039217 0.67058825]]
 
+#  [[0.8352941  0.8627451  0.7176471 ]
+#   [0.8039216  0.8352941  0.6509804 ]
+#   [0.7882353  0.8235294  0.6509804 ]]
+
+#  [[0.8156863  0.8627451  0.68235296]
+#   [0.7607843  0.827451   0.60784316]
+#   [0.77254903 0.84313726 0.63529414]]]
