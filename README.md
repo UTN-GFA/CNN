@@ -26,8 +26,10 @@ La convolución se realiza en principio con la imagen que recibe la CNN y el pri
 Alto y largo: Igual a la de la imagen de entrada (INPUT)
 Profundidad (Cantidad de canales): Será igual a la cantidad de filtros que integren cada capa de convolución. 
 
-![](/img/Layer1.png)
-_Figura 2_
+<div align="center">
+	<img src="img/Layer1.png"
+	<em> Figura 2 </em>
+</div>
 
 Luego de creado el primer mapa de característica, la red neuronal convolucional procede a crear más mapas de características, tantos como capas tenga la arquitectura de la red. 
 
@@ -35,8 +37,10 @@ Si analizamos la cuarta capa dentro de la arquitectura propuesta podemos observa
 
 Como se observa en la figura 3, si convolucionamos el mapa de características de la capa 4 con  el filtro “k” en una determinada posición (h, w) se obtiene un pixel que integrará el canal “k” en otro mapa de características. Los píxeles restantes del canal “k” del feature map serán resultado de desplazar el filtro “k” por el resto del feature map de la capa anterior. Los restantes canales del segundo mapa de características serán resultado de convolucionar y desplazar los restantes filtros de la capa 4 de la red.  
 
-![](img/Layer4.png)
-_Figura 3_ 
+<div align="center">
+	<img src="img/Layer4.png"
+	<em> Figura 3 </em>
+</div>
 
 Resulta interesante que a medida que hay más operaciones de convolución la red neuronal es capaz de detectar más características de la imagen que se busca analizar. Las primeras capas de la red detectan líneas, curvas y a medida que agregamos más capas se podrán identificar formas cada vez más complejas. Esto dependerá del problema que queramos abordar, no es lo mismo clasificar imágenes de ratones y elefantes que clasificar imágenes de personas por su rango etario. 
 
@@ -67,7 +71,9 @@ Para poder conocer la cantidad de parametros por capa de la red neuronal, podemo
 
 El siguiente diagrama muestra la salida de la función summary(): 
 
-![](img/Summary.png)
+<div align="center">
+	<img src="img/Summary.png"
+</div>
 
 ### 5. Operación entre los filtros, la imágen y los mapas de características
 
@@ -76,8 +82,10 @@ Los cuadrados rojo, verde y azul representan una submatriz de 3x3 de cada uno de
 Los cuadrados amarillos representan cada kernel del primer filtro de la primer capa de la red.
 Cada uno de los valores de la imagen se multiplican uno a uno con los valores de los kernels, es decir, los valores de la submatriz roja se multiplican con los valores del primer kernel y el resultado se suma a la multiplicación entre los valores de la submatriz verde con el segundo kernel del filtro y a su vez este resultado se suma a la multiplicación de los valores de la submatriz azul con los valores del tercer kernel. Luego, se evalúa el resultado en una función de activación (en este ejemplo: RELU) para finalmente sumarle un bias. Por cada filtro que se le aplica a la imagen el bias tomará un valor distinto. 
 
-![](img/Operation.png)
-_Figura 4_ 
+<div align="center">
+	<img src="img/Operation.png"
+	<em> Figura 4 </em>
+</div>
 
 Los valores de los filtros varían entre -1 y 1, mientras que los valores de la imagen de entrada y los feature maps de la red entre 0 y 1. 
 
@@ -86,8 +94,10 @@ Los valores de los filtros varían entre -1 y 1, mientras que los valores de la 
 Para poder ganar cierta intuición al momento de trabajar con redes neuronales además de adentrarnos en las características cuantitativas de la CNN, podemos ver qué cualidades posee. 
 	En la figura 5 se puede observar 4 capas que integran a cada uno de los mapas de características de la red neuronal convolucional. Se incluyeron 4 a modo de simplificación, pero la cantidad de capas de cada mapa de característica (número de canales) corresponde a la cantidad de filtros que se aplique por capa. 
 
-![](img/cifar-10.png)
-![](img/Feature-Maps.png)
+<div align="center">
+	<img src="img/cifar-10.png"
+	<img src="img/Feature Maos.png"
+</div>
 
 ### 7. Recursos 
 
@@ -110,6 +120,3 @@ _[Convolutional Neural Network: Feature Map and Filter Visualization](https://to
 _[How to Visualize Filters and Feature Maps in Convolutional Neural Networks](https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/)_
 
 _[Deep Learning in the Trenches: Understanding Inception Network from Scratch](https://www.analyticsvidhya.com/blog/2018/10/understanding-inception-network-from-scratch/)_
-
-
-
