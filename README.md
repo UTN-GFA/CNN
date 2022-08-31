@@ -10,11 +10,13 @@ Comprender cómo operan los distintos componentes y procesos de una red neuronal
 
 Para poder entender las características de una red neuronal convolucional (CNN) resulta una buena idea comenzar por entender cómo operan sus componentes de forma simplificada para luego extrapolar este comportamiento al resto de la estructura. 
 
-En este documento nos centraremos en la arquitectura de la Cifar-10 CNN provista por Jason Brownlee en su blog Machine Learning Mastery para poder llevar los conceptos teóricos a ejemplos prácticos que resulten fácilmente extrapolables a otros tipos de arquitecturas neuronales.  
+En este documento nos centraremos en la arquitectura de la Cifar-10 CNN provista por Jason Brownlee en su blog Machine Learning Mastery para poder llevar los conceptos teóricos a ejemplos prácticos que resulten fácilmente extrapolables a otros tipos de arquitecturas neuronales. 
 
-![](img/cifar-10.png)
-_Figura 1 - Arquitectura Cifar-10 donde se evidencian las diferentes capas con las dimensiones de sus componentes_
-
+<div align="center">
+	![](img/cifar-10.png)
+	_Figura 1 - Arquitectura Cifar-10 donde se evidencian las diferentes capas con las dimensiones de sus componentes_
+<div>
+	
 ### 3. Tamaño de los filtros y mapas de características 
 
 La principal operación que realiza una red neuronal convolucional es la convolución. Esta operación es la que da origen a los llamados mapas de características, es decir, a un conjunto de píxeles que guarda una relación con la imagen de entrada. 
@@ -101,11 +103,11 @@ Dentro del repositorio se encuentra:
 
 _[Neural Network Interpretation](https://christophm.github.io/interpretable-ml-book/neural-networks.html)_
 
-_[How to Visualize Filters and Feature Maps in Convolutional Neural Networks](https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/)_
-
 _[Tutorial — How to visualize Feature Maps directly from CNN layers](https://www.analyticsvidhya.com/blog/2020/11/tutorial-how-to-visualize-feature-maps-directly-from-cnn-layers/)_
 
 _[Convolutional Neural Network: Feature Map and Filter Visualization](https://towardsdatascience.com/convolutional-neural-network-feature-map-and-filter-visualization-f75012a5a49c)_
+
+_[How to Visualize Filters and Feature Maps in Convolutional Neural Networks](https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/)_
 
 _[Deep Learning in the Trenches: Understanding Inception Network from Scratch](https://www.analyticsvidhya.com/blog/2018/10/understanding-inception-network-from-scratch/)_
 
