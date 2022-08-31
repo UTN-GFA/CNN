@@ -2,11 +2,11 @@
 
 # Entendiendo el funcionamiento de las Redes Neuronales Convolucionales 
 
-1. Objetivo
+### 1. Objetivo
 
 Comprender cómo operan los distintos componentes y procesos de una red neuronal convolucional tales como su arquitectura, dimensión de filtros, operaciones aritméticas, conformación de los mapas de características (features maps) y los vínculos entre las diferentes capas. Para, de esta manera, poder diseñar y utilizarlas para procesar una imágen y detectar características de la misma con mayor conocimiento.
 
-2. Introducción
+### 2. Introducción
 
 Para poder entender las características de una red neuronal convolucional (CNN) resulta una buena idea comenzar por entender cómo operan sus componentes de forma simplificada para luego extrapolar este comportamiento al resto de la estructura. 
 
