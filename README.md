@@ -72,7 +72,7 @@ Para poder conocer la cantidad de parametros por capa de la red neuronal, podemo
 El siguiente diagrama muestra la salida de la función summary(): 
 
 <div align="center">
-	<img src="img/Summary.png"
+	<img src="img/Summary.png">
 </div>
 
 ### 5. Operación entre los filtros, la imágen y los mapas de características
@@ -95,8 +95,8 @@ Para poder ganar cierta intuición al momento de trabajar con redes neuronales a
 	En la figura 5 se puede observar 4 capas que integran a cada uno de los mapas de características de la red neuronal convolucional. Se incluyeron 4 a modo de simplificación, pero la cantidad de capas de cada mapa de característica (número de canales) corresponde a la cantidad de filtros que se aplique por capa. 
 
 <div align="center">
-	<img src="img/cifar-10.png"
-	<img src="img/Feature Maos.png"
+	<img src="img/cifar-10.png">
+	<img src="img/Feature Maos.png">
 </div>
 
 ### 7. Recursos 
