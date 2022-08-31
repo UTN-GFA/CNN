@@ -100,11 +100,11 @@ Visualize_feature_prediction.py: Programa que permite visualizar los mapas de ca
 
 8. Fuentes
 
-_Neural Network Interpretation_(https://christophm.github.io/interpretable-ml-book/neural-networks.html)
-_How to Visualize Filters and Feature Maps in Convolutional Neural Networks_(https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/)
-_Tutorial — How to visualize Feature Maps directly from CNN layers_(https://www.analyticsvidhya.com/blog/2020/11/tutorial-how-to-visualize-feature-maps-directly-from-cnn-layers/)
-_Convolutional Neural Network: Feature Map and Filter Visualization_(https://towardsdatascience.com/convolutional-neural-network-feature-map-and-filter-visualization-f75012a5a49c)
-_Deep Learning in the Trenches: Understanding Inception Network from Scratch_(https://www.analyticsvidhya.com/blog/2018/10/understanding-inception-network-from-scratch/)
+_[Neural Network Interpretation]_(https://christophm.github.io/interpretable-ml-book/neural-networks.html)
+_[How to Visualize Filters and Feature Maps in Convolutional Neural Networks]_(https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/)
+_[Tutorial — How to visualize Feature Maps directly from CNN layers]_(https://www.analyticsvidhya.com/blog/2020/11/tutorial-how-to-visualize-feature-maps-directly-from-cnn-layers/)
+_[Convolutional Neural Network: Feature Map and Filter Visualization]_(https://towardsdatascience.com/convolutional-neural-network-feature-map-and-filter-visualization-f75012a5a49c)
+_[Deep Learning in the Trenches: Understanding Inception Network from Scratch]_(https://www.analyticsvidhya.com/blog/2018/10/understanding-inception-network-from-scratch/)
 
 
 
