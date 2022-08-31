@@ -13,7 +13,7 @@ Para poder entender las características de una red neuronal convolucional (CNN)
 En este documento nos centraremos en la arquitectura de la Cifar-10 CNN provista por Jason Brownlee en su blog Machine Learning Mastery para poder llevar los conceptos teóricos a ejemplos prácticos que resulten fácilmente extrapolables a otros tipos de arquitecturas neuronales. 
 
 <div align="center">
-	<img src="img/cifar-10.png"
+	<img src="img/cifar-10.png">
 	<em> Figura 1 - Arquitectura Cifar-10 donde se evidencian las diferentes capas con las dimensiones de sus componentes </em>
 </div>
 	
@@ -27,7 +27,7 @@ Alto y largo: Igual a la de la imagen de entrada (INPUT)
 Profundidad (Cantidad de canales): Será igual a la cantidad de filtros que integren cada capa de convolución. 
 
 <div align="center">
-	<img src="img/Layer1.png"
+	<img src="img/Layer1.png">
 	<em> Figura 2 </em>
 </div>
 
@@ -38,7 +38,7 @@ Si analizamos la cuarta capa dentro de la arquitectura propuesta podemos observa
 Como se observa en la figura 3, si convolucionamos el mapa de características de la capa 4 con  el filtro “k” en una determinada posición (h, w) se obtiene un pixel que integrará el canal “k” en otro mapa de características. Los píxeles restantes del canal “k” del feature map serán resultado de desplazar el filtro “k” por el resto del feature map de la capa anterior. Los restantes canales del segundo mapa de características serán resultado de convolucionar y desplazar los restantes filtros de la capa 4 de la red.  
 
 <div align="center">
-	<img src="img/Layer4.png"
+	<img src="img/Layer4.png">
 	<em> Figura 3 </em>
 </div>
 
