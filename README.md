@@ -14,7 +14,7 @@ En este documento nos centraremos en la arquitectura de la Cifar-10 CNN provista
 
 <div align="center">
 	<img src="img/cifar-10.png"
-	<h4 align="center">_Figura 1 - Arquitectura Cifar-10 donde se evidencian las diferentes capas con las dimensiones de sus componentes_</h4>
+	<h4>_Figura 1 - Arquitectura Cifar-10 donde se evidencian las diferentes capas con las dimensiones de sus componentes_</h4>
 </div>
 	
 ### 3. Tamaño de los filtros y mapas de características 
