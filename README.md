@@ -1,3 +1,12 @@
+<!-- RESEARCH GROUP LOGO -->
+<br />
+<div align="center">
+  <img src="/img/logo.png">
+  
+  <h3 align="center">Entendiendo el funcionamiento de las Redes Neuronales Convolucionales</h3>
+
+![](img/GFA-logo.png)
+
 # Entendiendo el funcionamiento de las Redes Neuronales Convolucionales 
 
 1. Objetivo
