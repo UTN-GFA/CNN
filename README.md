@@ -96,7 +96,7 @@ Para poder ganar cierta intuición al momento de trabajar con redes neuronales a
 
 <div align="center">
 	<img src="img/cifar-10.png">
-	<img src="img/Feature Maos.png">
+	<img src="img/FeatureMaps.png">
 </div>
 
 ### 7. Recursos 
