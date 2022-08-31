@@ -34,7 +34,7 @@ Si analizamos la cuarta capa dentro de la arquitectura propuesta podemos observa
 Como se observa en la figura 3, si convolucionamos el mapa de características de la capa 4 con  el filtro “k” en una determinada posición (h, w) se obtiene un pixel que integrará el canal “k” en otro mapa de características. Los píxeles restantes del canal “k” del feature map serán resultado de desplazar el filtro “k” por el resto del feature map de la capa anterior. Los restantes canales del segundo mapa de características serán resultado de convolucionar y desplazar los restantes filtros de la capa 4 de la red.  
 
 ![](img/Layer4.png)
-Figura 3 
+_Figura 3_ 
 
 Resulta interesante que a medida que hay más operaciones de convolución la red neuronal es capaz de detectar más características de la imagen que se busca analizar. Las primeras capas de la red detectan líneas, curvas y a medida que agregamos más capas se podrán identificar formas cada vez más complejas. Esto dependerá del problema que queramos abordar, no es lo mismo clasificar imágenes de ratones y elefantes que clasificar imágenes de personas por su rango etario. 
 
@@ -75,7 +75,7 @@ Los cuadrados amarillos representan cada kernel del primer filtro de la primer c
 Cada uno de los valores de la imagen se multiplican uno a uno con los valores de los kernels, es decir, los valores de la submatriz roja se multiplican con los valores del primer kernel y el resultado se suma a la multiplicación entre los valores de la submatriz verde con el segundo kernel del filtro y a su vez este resultado se suma a la multiplicación de los valores de la submatriz azul con los valores del tercer kernel. Luego, se evalúa el resultado en una función de activación (en este ejemplo: RELU) para finalmente sumarle un bias. Por cada filtro que se le aplica a la imagen el bias tomará un valor distinto. 
 
 ![](img/Operation.png)
-Figura 4 
+_Figura 4_ 
 
 Los valores de los filtros varían entre -1 y 1, mientras que los valores de la imagen de entrada y los feature maps de la red entre 0 y 1. 
 
@@ -90,12 +90,12 @@ Para poder ganar cierta intuición al momento de trabajar con redes neuronales a
 ### 7. Recursos 
 
 Dentro del repositorio se encuentra: 
-Cifar-10-CNN.py 
-Final_model.h5: CNN ya entrenada.  
-Horse5.png: IMAGE Input.
-Prediction_cnn.py: Programa que permite clasificar imágenes de la CNN Cifar-10. 
-Operation_validation.py: Programa para validar el cálculo que realiza internamente la red neuronal. 
-Visualize_feature_prediction.py: Programa que permite visualizar los mapas de características de toda la red neuronal. 
+* Cifar-10-CNN.py 
+* Final_model.h5: CNN ya entrenada.  
+* Horse5.png: IMAGE Input.
+* Prediction_cnn.py: Programa que permite clasificar imágenes de la CNN Cifar-10. 
+* Operation_validation.py: Programa para validar el cálculo que realiza internamente la red neuronal. 
+* Visualize_feature_prediction.py: Programa que permite visualizar los mapas de características de toda la red neuronal. 
 
 ### 8. Fuentes
 
