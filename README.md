@@ -69,7 +69,7 @@ Para calcular la cantidad de parámetros de las capas de la Fully-Connected Neur
 
 Para poder conocer la cantidad de parametros por capa de la red neuronal, podemos llamar a la función summary() dentro de nuestro código para conocer el resto de parámetros. 
 
-El siguiente diagrama muestra la salida de la función summary(): 
+El siguiente diagrama muestra la salida de la función _summary()_: 
 
 <div align="center">
 	<img src="img/Summary.png">
@@ -83,7 +83,7 @@ Los cuadrados amarillos representan cada kernel del primer filtro de la primer c
 Cada uno de los valores de la imagen se multiplican uno a uno con los valores de los kernels, es decir, los valores de la submatriz roja se multiplican con los valores del primer kernel y el resultado se suma a la multiplicación entre los valores de la submatriz verde con el segundo kernel del filtro y a su vez este resultado se suma a la multiplicación de los valores de la submatriz azul con los valores del tercer kernel. Luego, se evalúa el resultado en una función de activación (en este ejemplo: RELU) para finalmente sumarle un bias. Por cada filtro que se le aplica a la imagen el bias tomará un valor distinto. 
 
 <div align="center">
-	<img src="img/Operation.png"
+	<img src="img/Operation.png">
 	<em> Figura 4 </em>
 </div>
 
