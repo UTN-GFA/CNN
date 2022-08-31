@@ -39,6 +39,7 @@ Como se observa en la figura 3, si convolucionamos el mapa de características d
 
 <div align="center">
 	<img src="img/Layer4.png">
+	
 	<em> Figura 3 </em>
 </div>
 
