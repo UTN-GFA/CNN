@@ -85,7 +85,7 @@ Para poder ganar cierta intuición al momento de trabajar con redes neuronales a
 	En la figura 5 se puede observar 4 capas que integran a cada uno de los mapas de características de la red neuronal convolucional. Se incluyeron 4 a modo de simplificación, pero la cantidad de capas de cada mapa de característica (número de canales) corresponde a la cantidad de filtros que se aplique por capa. 
 
 ![](img/cifar-10.png)
-![](img/Feature Maps.png)
+![](img/Feature-Maps.png)
 
 ### 7. Recursos 
 
@@ -100,9 +100,13 @@ Dentro del repositorio se encuentra:
 ### 8. Fuentes
 
 _[Neural Network Interpretation](https://christophm.github.io/interpretable-ml-book/neural-networks.html)_
+
 _[How to Visualize Filters and Feature Maps in Convolutional Neural Networks](https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/)_
+
 _[Tutorial — How to visualize Feature Maps directly from CNN layers](https://www.analyticsvidhya.com/blog/2020/11/tutorial-how-to-visualize-feature-maps-directly-from-cnn-layers/)_
+
 _[Convolutional Neural Network: Feature Map and Filter Visualization](https://towardsdatascience.com/convolutional-neural-network-feature-map-and-filter-visualization-f75012a5a49c)_
+
 _[Deep Learning in the Trenches: Understanding Inception Network from Scratch](https://www.analyticsvidhya.com/blog/2018/10/understanding-inception-network-from-scratch/)_
 
 
