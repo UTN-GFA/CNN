@@ -10,7 +10,7 @@ Comprender cómo operan los distintos componentes y procesos de una red neuronal
 
 Para poder entender las características de una red neuronal convolucional (CNN) resulta una buena idea comenzar por entender cómo operan sus componentes de forma simplificada para luego extrapolar este comportamiento al resto de la estructura. 
 
-En este documento nos centraremos en la arquitectura de la Cifar-10 CNN provista por Jason Brownlee en su blog Machine Learning Mastery para poder llevar los conceptos teóricos a ejemplos prácticos que resulten fácilmente extrapolables a otros tipos de arquitecturas neuronales. 
+En este documento nos centraremos en la [arquitectura de la Cifar-10 CNN provista por Jason Brownlee en su blog Machine Learning Mastery](https://machinelearningmastery.com/how-to-develop-a-cnn-from-scratch-for-cifar-10-photo-classification/) para poder llevar los conceptos teóricos a ejemplos prácticos que resulten fácilmente extrapolables a otros tipos de arquitecturas neuronales. 
 
 <div align="center">
 	<img src="img/cifar-10.png">
