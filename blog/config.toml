@@ -20,3 +20,13 @@ highlight_code = true
 
 [extra]
 author = "Evelyn Kesler"
+
+clean_blog_social = [
+    {url = "https://github.com/UTN-GFA", icon="fab fa-github fa-lg"}
+]
+
+clean_blog_menu = [
+    {url = "$BASE_URL", name = "Inicio"},
+    {url = "$BASE_URL/about", name = "Conocenos"},
+    {url = "$BASE_URL/contact", name = "Contacto"}
+]

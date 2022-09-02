@@ -100,7 +100,7 @@ Para poder ganar cierta intuición al momento de trabajar con redes neuronales a
 	En la figura 5 se puede observar 4 capas que integran a cada uno de los mapas de características de la red neuronal convolucional. Se incluyeron 4 a modo de simplificación, pero la cantidad de capas de cada mapa de característica (número de canales) corresponde a la cantidad de filtros que se aplique por capa. 
 
 <div align="center">
-	<img src="img/cifar-10.png">
+	<img src="../img/cifar-10.png">
 	<img src="../img/FeatureMaps.png">
 </div>
 
