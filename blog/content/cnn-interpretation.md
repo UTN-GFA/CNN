@@ -32,7 +32,7 @@ Alto y largo: Igual a la de la imagen de entrada (INPUT)
 Profundidad (Cantidad de canales): Será igual a la cantidad de filtros que integren cada capa de convolución. 
 
 <div align="center">
-	<img src="img/Layer1.png">
+	<img src="../img/Layer1.png">
 	<em> Figura 2 </em>
 </div>
 
@@ -43,7 +43,7 @@ Si analizamos la cuarta capa dentro de la arquitectura propuesta podemos observa
 Como se observa en la figura 3, si convolucionamos el mapa de características de la capa 4 con  el filtro “k” en una determinada posición (h, w) se obtiene un pixel que integrará el canal “k” en otro mapa de características. Los píxeles restantes del canal “k” del feature map serán resultado de desplazar el filtro “k” por el resto del feature map de la capa anterior. Los restantes canales del segundo mapa de características serán resultado de convolucionar y desplazar los restantes filtros de la capa 4 de la red.  
 
 <div align="center">
-	<img src="img/Layer4.png">
+	<img src="../img/Layer4.png">
 	<em> Figura 3 </em>
 </div>
 
@@ -77,7 +77,7 @@ Para poder conocer la cantidad de parametros por capa de la red neuronal, podemo
 El siguiente diagrama muestra la salida de la función _summary()_: 
 
 <div align="center">
-	<img src="img/Summary.png">
+	<img src="../img/Summary.png">
 </div>
 
 ### 5. Operación entre los filtros, la imágen y los mapas de características
@@ -88,7 +88,7 @@ Los cuadrados amarillos representan cada kernel del primer filtro de la primer c
 Cada uno de los valores de la imagen se multiplican uno a uno con los valores de los kernels, es decir, los valores de la submatriz roja se multiplican con los valores del primer kernel y el resultado se suma a la multiplicación entre los valores de la submatriz verde con el segundo kernel del filtro y a su vez este resultado se suma a la multiplicación de los valores de la submatriz azul con los valores del tercer kernel. Luego, se evalúa el resultado en una función de activación (en este ejemplo: RELU) para finalmente sumarle un bias. Por cada filtro que se le aplica a la imagen el bias tomará un valor distinto. 
 
 <div align="center">
-	<img src="img/Operation.png">
+	<img src="../img/Operation.png">
 	<em> Figura 4 </em>
 </div>
 
@@ -101,7 +101,7 @@ Para poder ganar cierta intuición al momento de trabajar con redes neuronales a
 
 <div align="center">
 	<img src="img/cifar-10.png">
-	<img src="img/FeatureMaps.png">
+	<img src="../img/FeatureMaps.png">
 </div>
 
 ### 7. Recursos 
