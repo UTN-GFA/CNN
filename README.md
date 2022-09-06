@@ -1,6 +1,6 @@
 ![](img/GFA-logo.png)
 
-# ¿Cómo funcionan las Redes Neuronales Convolucionales?
+# Dimensiones, filtros y operaciones de la Redes Neuronales Convolucionales
 
 ### 1. Objetivo
 
